@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+/* Header layout */
+.Header {
+  display: flex;
+  justify-content: space-between; /* Title left and nav centered */
+  align-items: center;
+  padding: 40px 110px;
+}
+
+/* Title */
+.title {
+  font-family: 'Orbitron', sans-serif;
+  /* font-size: 35px; */
+  font-weight: 700;
+  color: #0a012c;
+  letter-spacing: 1px;
+}
+
+
+/* Center navigation items horizontally with reduced spacing */
+.nav-links {
+  display: flex;
+  justify-content:end; /* Centers nav items */
+  gap: 20%; /* Reduced gap between items */
+  flex: 1; /* Ensures nav-links takes available space */
+}
+
+/* Navigation item styling */
+.navigation {
+  font-size: 18px;
+  color: #fef3c7; /* amber-50 */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navigation:hover {
+  color: #FACC15;
+  text-shadow: 0 0 8px #FACC15, 0 0 12px #FACC15;
+
+}
+.Body{
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    
+    
+}
+.big{
+    font-weight: 700;
+    margin-left: 30rem;
+    width:fit-content;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+    /* margin-bottom: 2rem; */
+}
+.small{
+    font-size: large;
+    margin-left: 30.5rem;
+    margin-right: 2rem;
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    width:100% ;
+    height: 50px;
+    /* background-color: black; */
+    gap: 60px;
+    
+}
+.button1{
+    margin-left:31rem ;
+    height:auto;
+    width: 180px;
+    background-color:rgb(2, 2, 54);
+    border-radius: 25px;
+    cursor: pointer;
+}
+.button2{
+    margin-left: 2rem;
+    height:auto;
+    width: 180px;
+    background-color: transparent;
+    border-radius: 25px;
+    border: 2px solid rgb(2, 2, 54);
+    cursor: pointer;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+.button1:hover{
+    /* background-color: rgb(2, 2, 54); */
+    background-color: transparent;
+    color: white;
+    border: 2px solid rgb(2, 2, 54);
+    
+}
+.button2:hover{
+    background-color: rgb(2, 2, 54);
+    color: white;
+    border: 2px solid rgb(2, 2, 54);  
+}
+/* Typewriter Effect */
+/* Typewriter text container */
+.typewriter-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Full width of the parent container */
+  height: 60px; /* Adjust based on the height of your text */
+  overflow: hidden; /* Prevent the text from overflowing */
+  position: relative;
+  margin-right: 10px;
+}
+
+/* Typewriter text effect */
+.typewriter-text {
+  display: inline-block;
+  white-space: nowrap;
+  letter-spacing: .15em;
+  width: 100%; /* Allow the text to take up the available width */
+  max-width: 100%; /* Prevent it from exceeding the parent width */
+  animation: typing 4s steps(30, end) infinite alternate,
+             blink-caret .75
+}
